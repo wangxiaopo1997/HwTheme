@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/dialog_header"
+        android:orientation="vertical"
+        android:layout_width="240dp"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:gravity="center"
+        android:background="@drawable/shape_dialog_bg_main_color">
+
+        <!-- Icon -->
+        <ImageView
+            android:contentDescription="@id/dialog_title"
+            android:id="@+id/dialog_icon"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/ic_baseline_error" />
+
+        <!-- Title（default is gone) -->
+        <TextView
+            android:id="@+id/dialog_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#ffffff"
+            android:visibility="gone" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="280dp"
+        android:padding="16dp"
+        android:gravity="center"
+        android:background="@drawable/shape_dialog_bg_white_color">
+
+        <!-- Dialog Message -->
+        <TextView
+            android:id="@+id/tv_tips"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:gravity="center"
+            android:textColor="@color/red"
+            android:text=""
+            />
+        <TextView
+            android:id="@+id/dialog_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:gravity="center"
+            android:text="下载好主题后，打开”主题“应用程序，查看我的主题即可应用。您也可以查看教程，是否查看？" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <Button
+                android:id="@+id/dialog_button_cancel"
+                android:layout_width="100dp"
+                android:layout_height="42dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="8dp"
+                android:textColor="#ffffff"
+                android:gravity="center"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/shape_btn_bg_cancel"
+                android:text="不用"/>
+
+            <Button
+                android:id="@+id/dialog_button_ok"
+                android:layout_width="100dp"
+                android:layout_height="42dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="8dp"
+                android:background="@drawable/shape_btn_bg"
+                android:textColor="#ffffff"
+                android:gravity="center"
+                android:layout_marginRight="5dp"
+                android:text="好的"/>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>
