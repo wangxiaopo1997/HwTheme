@@ -27,7 +27,7 @@ import java.lang.reflect.Method
  * <pre>
  *     author : wxp
  *     time   : 2020/11/03
- *     desc   :
+ *     desc   : 详情
  * </pre>
  */
 class ThemeDetailFragment: BaseFragment<FragmentThemeDetailBinding>() {
